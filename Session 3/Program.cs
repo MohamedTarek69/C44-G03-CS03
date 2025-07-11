@@ -129,7 +129,12 @@ namespace Session_3
             ///above 30 degrees is "Just Hot"
             ///anything else is "Just Good"
 
+            Console.Write("Enter temperature: ");
+            int temp = Convert.ToInt32(Console.ReadLine());
 
+            string result = temp < 10 ? "Just Cold" :temp > 30 ? "Just Hot" :"Just Good";
+
+            Console.WriteLine(result);
             #endregion
 
             #region Q11  Write a program that takes the date from the user and displays it in various formats using string interpolation.
