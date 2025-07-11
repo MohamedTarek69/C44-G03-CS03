@@ -1,4 +1,6 @@
-﻿namespace Session_3
+﻿using static System.Net.Mime.MediaTypeNames;
+
+namespace Session_3
 {
     internal class Program
     {
@@ -48,7 +50,13 @@
             #endregion
 
             #region Q4 - Write C# program that Extract a substring from a given string.
-
+            Console.Write("Please enter your string: ");
+            string str = Console.ReadLine();
+            Console.Write("Please enter the start  number: ");
+            int start;
+            int.TryParse(Console.ReadLine(), out start);
+            string substr = str.Substring(start);
+            Console.WriteLine($"The substring starting from index {start} is: {substr}");
 
             #endregion
 
