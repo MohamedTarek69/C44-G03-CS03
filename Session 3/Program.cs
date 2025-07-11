@@ -50,17 +50,23 @@ namespace Session_3
             #endregion
 
             #region Q4 - Write C# program that Extract a substring from a given string.
-            Console.Write("Please enter your string: ");
-            string str = Console.ReadLine();
-            Console.Write("Please enter the start  number: ");
-            int start;
-            int.TryParse(Console.ReadLine(), out start);
-            string substr = str.Substring(start);
-            Console.WriteLine($"The substring starting from index {start} is: {substr}");
+            //Console.Write("Please enter your string: ");
+            //string str = Console.ReadLine();
+            //Console.Write("Please enter the start  number: ");
+            //int start;
+            //int.TryParse(Console.ReadLine(), out start);
+            //string substr = str.Substring(start);
+            //Console.WriteLine($"The substring starting from index {start} is: {substr}");
 
             #endregion
 
             #region Q5 - Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
+            //int a = 10;
+            //int b = a;
+            //a = 20;
+            //Console.WriteLine($"After modification: a = {a}, b = {b}");
+            // here a will be 20 and be will be 10 because we passed by value not by referance so even if a change b will not change
+
 
 
             #endregion
