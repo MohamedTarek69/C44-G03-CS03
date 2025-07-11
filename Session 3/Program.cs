@@ -72,17 +72,40 @@ namespace Session_3
             #endregion
 
             #region Q6 - Write C# program that Assigning one reference type variable to another and modifying the object through one variable and mention what will happen
+            //Person p1 = new Person();
+            //p1.Name = "Ahmed";
+            //Person p2 = p1;
+            //p1.Name = "Mohamed";
+            //Console.WriteLine($"After modification: p1.Name = {p1.Name}, p2.Name = {p2.Name}");
+            // here p1.Name will be "Mohamed" and p2.Name will be "Mohamed" because we passed by reference so now the the both will point to the same address so when we change p1.name it will change p2.name
 
 
             #endregion
 
             #region Q7 - Write C# program that take two string variables and print them as one variable 
-
+            //Console.Write("Enter the first str: ");
+            //string str1 = Console.ReadLine();
+            //Console.Write("Enter the second str: ");
+            //string str2 = Console.ReadLine();
+            //string combined = $"{str1}{str2}";
+            //Console.WriteLine(combined);
 
             #endregion
 
             #region Q8 - Write a program that calculates the simple interest given the principal amount, rate of interest, and time
             // Note :  The formula for simple interest is Interest = (principal * rate * time ) /100.
+
+            //Console.Write("Enter the principal amount: ");
+            //double principal;
+            //double.TryParse(Console.ReadLine(), out principal);
+            //Console.Write("Enter the rate of interest: ");
+            //double rate;
+            //double.TryParse(Console.ReadLine(), out rate);
+            //Console.Write("Enter the time in years: ");
+            //double time;
+            //double.TryParse(Console.ReadLine(), out time);
+            //double interest = (principal * rate * time) / 100;
+            //Console.WriteLine($"The simple interest is: {interest}");
 
             #endregion
 
