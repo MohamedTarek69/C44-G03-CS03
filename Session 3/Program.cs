@@ -55,8 +55,17 @@ namespace Session_3
             //Console.Write("Please enter the start  number: ");
             //int start;
             //int.TryParse(Console.ReadLine(), out start);
-            //string substr = str.Substring(start);
-            //Console.WriteLine($"The substring starting from index {start} is: {substr}");
+            //Console.Write("Please enter number of steps: ");
+            //int Steps;
+            //int.TryParse(Console.ReadLine(), out Steps);
+            //if (start < 0 || Steps < 0 || start + Steps > str.Length)
+            //{
+            //    Console.WriteLine("Invalid start or End value.");
+            //    return;
+            //}
+
+            //string substr = str.Substring(start, Steps);
+            //Console.WriteLine($"The substring starting from index = {start} with steps = {Steps} is: {substr}");
 
             #endregion
 
@@ -96,15 +105,15 @@ namespace Session_3
             // Note :  The formula for simple interest is Interest = (principal * rate * time ) /100.
 
             //Console.Write("Enter the principal amount: ");
-            //double principal;
-            //double.TryParse(Console.ReadLine(), out principal);
+            //decimal principal;
+            //decimal.TryParse(Console.ReadLine(), out principal);
             //Console.Write("Enter the rate of interest: ");
             //double rate;
             //double.TryParse(Console.ReadLine(), out rate);
             //Console.Write("Enter the time in years: ");
             //double time;
             //double.TryParse(Console.ReadLine(), out time);
-            //double interest = (principal * rate * time) / 100;
+            //decimal interest = (principal * (decimal)rate * (decimal)time) / 100;
             //Console.WriteLine($"The simple interest is: {interest}");
 
             #endregion
@@ -143,6 +152,33 @@ namespace Session_3
             ///Today's date : 20 / 11 / 2001
             ///Today's date : 20 – 11 – 2001
 
+            //Console.Write("Please enter the day: ");
+            //int day;
+            //int.TryParse(Console.ReadLine(), out day);
+            //if (day < 1 || day > 31)
+            //{
+            //    Console.WriteLine("Invalid day please enter a valid day between 1 and 31.");
+            //    return;
+            //}
+            //Console.Write("Please enter the month: ");
+            //int month;
+            //int.TryParse(Console.ReadLine(), out month);
+            //if (month < 1 || month > 12)
+            //{
+            //    Console.WriteLine("Invalid month please enter a valid month between 1 and 12.");
+            //    return;
+            //}
+            //Console.Write("Please enter the year: ");
+            //int year;
+            //int.TryParse(Console.ReadLine(), out year);
+            //if (year < 0)
+            //{
+            //    Console.WriteLine("Invalid year please enter a valid year.");
+            //    return;
+            //}
+            //Console.WriteLine($"Today's date : {day} , {month} , {year}");
+            //Console.WriteLine($"Today's date : {day} / {month} / {year}");
+            //Console.WriteLine($"Today's date : {day} - {month} - {year}");
 
             #endregion
 
@@ -154,6 +190,18 @@ namespace Session_3
             ///Input: 9
             ///Output: No
 
+            //Console.Write("Please enter a number: ");
+            //int number;
+            //int.TryParse(Console.ReadLine(), out number);
+            //if (number % 3 == 0 && number % 4 == 0)
+            //{
+            //    Console.WriteLine("Yes");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No");
+            //}
+
 
             #endregion
 
@@ -164,6 +212,18 @@ namespace Session_3
             ///Example(2)
             ///Input: 10
             ///Output: positive
+
+            //Console.Write("Please enter an integer: ");
+            //int number;
+            //int.TryParse(Console.ReadLine(), out number);
+            //if (number < 0)
+            //{
+            //    Console.WriteLine("negative");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("positive");
+            //}
 
 
             #endregion
@@ -180,13 +240,34 @@ namespace Session_3
             ///Max element = 9
             ///Min element = 3
 
-
-
+            //Console.Write("Please enter the first integer: ");
+            //int firstInt;
+            //int.TryParse(Console.ReadLine(), out firstInt);
+            //Console.Write("Please enter the second integer: ");
+            //int secondInt;
+            //int.TryParse(Console.ReadLine(), out secondInt);
+            //Console.Write("Please enter the third integer: ");
+            //int thirdInt;
+            //int.TryParse(Console.ReadLine(), out thirdInt);
+            //int MaxNumber = Math.Max(firstInt,Math.Max(secondInt, thirdInt));
+            //int MinNumber = Math.Min(firstInt, Math.Min(secondInt, thirdInt));
+            //Console.WriteLine($"Max number = {MaxNumber}");
+            //Console.WriteLine($"Min number = {MinNumber}");
 
             #endregion
 
             #region Q15 - Write a program that allows the user to insert an integer number then check If a number is even or odd.
-
+            //Console.Write("Please enter an integer number: ");
+            //int number;
+            //int.TryParse(Console.ReadLine(), out number);
+            //if (number % 2 == 0)
+            //{
+            //    Console.WriteLine("Even");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Odd");
+            //}
 
             #endregion
 
@@ -198,6 +279,18 @@ namespace Session_3
             ///Input: b
             ///Output: Consonant
 
+            //Console.Write("Please enter a character: ");
+            //char Ch;
+            //char.TryParse(Console.ReadLine(), out Ch);
+            //Ch = char.ToLower(Ch);
+            //if (Ch =='a' || Ch == 'e' || Ch == 'i' || Ch == 'o' || Ch == 'u')
+            //{
+            //    Console.WriteLine("Vowel");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Consonant");
+            //}
             #endregion
 
             #region Q17 - Write a program to input the month number and print the number of days in that month.
@@ -205,6 +298,28 @@ namespace Session_3
             /// Input: Month Number: 1
             /// Output: Days in Month: 31
 
+            //Console.Write("Please enter the month number (1-12): ");
+            //int monthNumber;
+            //int.TryParse(Console.ReadLine(), out monthNumber);
+            //if (monthNumber < 1 || monthNumber > 12)
+            //{
+            //    Console.WriteLine("Invalid month number. Please enter a number between 1 and 12.");
+            //    return;
+            //}
+            //int daysInMonth;
+            //if (monthNumber==1 || monthNumber==3 || monthNumber==5 || monthNumber==7 || monthNumber==8 || monthNumber==10 || monthNumber==12)
+            //{
+            //    daysInMonth = 31;
+            //}
+            //else if (monthNumber==4 || monthNumber==6 || monthNumber==9 || monthNumber==11)
+            //{
+            //    daysInMonth = 30;
+            //}
+            //else
+            //{
+            //    daysInMonth = 28;
+            //}
+            //Console.WriteLine($"Days in Month: {daysInMonth}");
 
             #endregion
         }
